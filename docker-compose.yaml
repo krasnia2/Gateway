@@ -1,0 +1,21 @@
+version: '3'
+services:
+  coffeeapi:
+    build: Gateway/CoffeeAPI/
+    ports:
+      - "8080:80"
+      - "8081:443"
+    environment:
+      ASPNETCORE_URLS: "https://+;http://+"
+      ASPNETCORE_HTTP_PORT: "8080"
+      ASPNETCORE_ENVIRONMENT: "Development"
+
+  teaapi:
+    build: TeaAPI/
+    ports:
+      - "8082:80"
+      - "8083:443"
+    environment:
+      ASPNETCORE_URLS: "https://+;http://+"
+      ASPNETCORE_HTTPS_PORT: "8082"
+      ASPNETCORE_ENVIRONMENT: "Development"

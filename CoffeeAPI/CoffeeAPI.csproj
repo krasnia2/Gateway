@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>Coffee-API-3b5804c4-2cee-4c81-9326-5548c0052889</UserSecretsId>
   </PropertyGroup>
 
 
